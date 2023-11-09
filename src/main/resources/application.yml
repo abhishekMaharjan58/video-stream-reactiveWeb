@@ -1,0 +1,23 @@
+spring:
+  codec:
+    max-in-memory-size: 3GB
+  servlet:
+    multipart:
+      max-file-size: 35MB
+      file-size-threshold: 35MB
+      max-request-size: 35MB
+
+server:
+  port: 8080
+  compression:
+    enabled: true
+    mime-types: text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json
+    min-response-size: 1024
+  http2:
+    enabled: true
+
+
+
+filePath: /project/chat/files/
+fileTempPath: /project/chat/temp/
+fileDownloadEndpoint: http://103.90.86.112/salesforce
